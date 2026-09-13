@@ -1,0 +1,53 @@
+# HealthConnect – Week 6 Project Summary
+
+## 1. What I Planned to Accomplish
+
+The main goal for Week 6 was to move beyond the descriptive analysis completed in Week 5 and develop deeper analytics and decision-support insights. I planned to validate previous findings, investigate key factors associated with appointment no-shows, improve the Power BI dashboard, develop preliminary risk segmentation, and collaborate with the Data Science track.
+
+## 2. What I Completed
+
+I completed additional analysis of appointment no-shows, including previous no-show behaviour, reminder channels, appointment type, distance to clinic, gender and booking lead time. I also developed a preliminary risk-segmentation approach and updated the Power BI dashboard to present the findings more clearly.
+
+## 3. What I Improved from Week 5
+
+Week 5 focused mainly on data preparation and exploratory analysis. In Week 6, I progressed from describing the data to explaining patterns and identifying factors that could support decision-making. I also improved the dashboard by adding more focused no-show risk and decision-support analysis.
+
+## 4. What I Integrated
+
+I integrated the Week 5 cleaned dataset and baseline KPIs with the new Week 6 advanced analysis. I also integrated risk factors such as previous no-shows, booking lead time, distance, reminder status and appointment type into the decision-support framework.
+
+## 5. Track(s) I Collaborated With
+
+I collaborated with the **Data Science track**.
+
+## 6. What Was Exchanged
+
+I provided the Data Science track with the cleaned dataset, the `is_no_show` target variable, relevant predictor variables and analytical findings from the Week 6 investigation. Key variables included previous no-shows, booking lead time, distance, reminder information, appointment type and demographic variables.
+
+## 7. What Changed as a Result
+
+The collaboration established a clearer connection between descriptive/advanced analytics and predictive modelling. The identified risk factors can now be tested by the Data Science track to determine their predictive importance and to validate the proposed risk segmentation.
+
+## 8. Key Findings / Development Outcomes
+
+The analysis showed that previous no-show behaviour was associated with a higher current no-show rate. Patients located more than 30 km from the clinic also showed a notably higher no-show rate. Reminder channels showed differences in observed outcomes, with SMS performing best among the channels analysed. Follow-up appointments recorded the highest observed no-show rate among appointment types. These findings were used to develop practical recommendations around targeted reminders, patient engagement and accessibility.
+
+## 9. Major Challenges
+
+The main challenges were interpreting relationships without incorrectly assuming causation, deciding which variables were genuinely useful for decision support, and presenting multiple findings in a clear and useful Power BI dashboard without overcrowding it.
+
+## 10. Important Decisions
+
+I decided to focus the Week 6 dashboard on **no-show risk and decision support** rather than repeating Week 5 EDA. I also treated the risk segmentation as a preliminary analytical framework rather than a validated prediction model, leaving formal predictive validation to the Data Science track.
+
+## 11. Remaining Issues
+
+The preliminary risk segmentation still requires predictive validation. The effectiveness of reminder channels also requires further investigation because the available data is observational. Additional modelling is needed to determine which factors are independently important predictors of no-shows.
+
+## 12. My Contribution to the Overall HealthConnect Project
+
+My contribution was to transform the cleaned HealthConnect appointment data into actionable analytical insights. I identified important no-show patterns, developed decision-support analysis, improved the Power BI dashboard, documented key findings and provided the Data Science track with relevant data and variables for predictive modelling.
+
+## 13. Proposed Focus for Week 7
+
+My proposed Week 7 focus is to use the Data Science modelling results to refine the no-show risk framework and strengthen the decision-support dashboard. I will focus on validating the most important predictors, incorporating useful model outputs, improving recommendations and preparing a clearer final presentation of how HealthConnect can reduce appointment no-shows.
