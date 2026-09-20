@@ -280,3 +280,246 @@ The major outcome was the identification and prioritisation of factors associate
 
 Uploaded and Edited by:
 Emmanuel Olisaemeka Echea
+
+
+# HealthConnect – Data Analytics
+
+## Week 7: Analytics Testing, Validation & Refinement
+
+### Project Overview
+
+The HealthConnect Data Analytics project analyses appointment data to understand appointment attendance and no-show behaviour and to develop evidence-based decision support.
+
+Week 7 focused on validating the findings and KPIs developed during Week 6 using independent Excel calculations, pivot-table analysis and Power BI validation.
+
+The analysis concentrated on:
+
+- Appointment outcomes
+- No-show behaviour
+- Previous no-show history
+- Reminder-channel effectiveness
+- Distance to clinic
+- Booking lead time
+- Appointment type
+- Risk segmentation
+
+---
+
+## Dataset Overview
+
+The dataset contains 5,000 appointments.
+
+### Validated appointment outcomes
+
+| Outcome | Count | Rate |
+|---|---:|---:|
+| Attended | 2,314 | 46.28% |
+| No-show | 2,423 | 48.46% |
+| Cancelled | 263 | 5.26% |
+| Total | 5,000 | 100% |
+
+---
+
+## Week 7 Validation
+
+The Week 7 validation process compared dashboard outputs with independent Excel calculations and pivot-table results.
+
+### KPI validation included:
+
+- Total appointments
+- Total attended
+- Total no-shows
+- Total cancellations
+- No-show rate
+- Attendance rate
+- Cancellation rate
+- Average waiting time
+- Average booking lead time
+
+### Important validation correction
+
+An initial Excel validation cell labelled "No-Show Rate" displayed 5.26%.
+
+This value represents the cancellation rate.
+
+The validated no-show rate is:
+
+**2,423 / 5,000 = 48.46%**
+
+The KPI label/value should therefore be corrected before final submission.
+
+---
+
+## Validated Findings
+
+### 1. Previous No-Show Behaviour
+
+| Previous No-Shows | No-Show Rate |
+|---:|---:|
+| 0 | 43.51% |
+| 1 | 53.49% |
+| 2 | 59.36% |
+| 3 | 67.95% |
+| 4 | 66.67% |
+| 5 | 100.00% |
+
+The analysis shows increasing observed no-show rates as previous no-show history increases, particularly from 0 to 3 previous no-shows.
+
+Small subgroup sizes should be considered when interpreting the highest values.
+
+---
+
+### 2. Distance to Clinic
+
+The highest observed no-show rate occurred among appointments involving patients located more than 30 km from the clinic.
+
+**Above 30 km: 68.06%**
+
+Distance is therefore an important candidate variable for further predictive analysis.
+
+---
+
+### 3. Booking Lead Time
+
+| Booking Lead Group | No-Show Rate |
+|---|---:|
+| 0–7 days | 27.81% |
+| 8–14 days | 33.55% |
+| 15–30 days | 43.21% |
+| 31–60 days | 60.49% |
+
+Longer booking lead time is associated with substantially higher observed no-show rates.
+
+---
+
+### 4. Reminder Channel
+
+| Reminder Channel | No-Show Rate |
+|---|---:|
+| SMS | 45.75% |
+| Email | 48.41% |
+| WhatsApp | 49.77% |
+| No Reminder | 51.39% |
+
+SMS recorded the lowest observed no-show rate among the reminder categories analysed.
+
+The analysis is observational and does not establish that reminder channel causes differences in attendance.
+
+---
+
+### 5. Appointment Type
+
+| Appointment Type | No-Show Rate |
+|---|---:|
+| Follow-up | 51.23% |
+| Specialist Consultation | 47.44% |
+| General Consultation | 46.64% |
+
+Follow-up appointments recorded the highest observed no-show rate.
+
+---
+
+## Updated Recommendations
+
+1. Correct and standardise KPI definitions across Excel and Power BI.
+2. Investigate targeted engagement for patients with previous no-show history.
+3. Investigate additional confirmation for appointments booked significantly in advance.
+4. Explore accessibility solutions for patients located more than 30 km from the clinic.
+5. Continue evaluating reminder channels by patient and appointment segment.
+6. Use predictive modelling before deploying the preliminary risk segmentation.
+7. Avoid treating demographic variables as primary intervention variables without sufficient evidence.
+
+---
+
+## Data Science Cross-Track Collaboration
+
+The Data Analytics track will provide validated analytical findings and candidate features to the Data Science track.
+
+### Candidate modelling features
+
+- Previous no-shows
+- Booking lead days
+- Distance to clinic
+- Reminder received
+- Reminder channel
+- Appointment type
+- Age
+- Gender
+- Waiting time
+- Previous appointments
+
+### Target variable
+
+`is_no_show`
+
+### Data Science validation questions
+
+- Which variables are strongest predictors?
+- Does previous no-show history remain predictive?
+- Does distance remain predictive?
+- Does booking lead time remain predictive?
+- Does reminder channel add predictive value?
+- Do interaction effects improve the model?
+- Does the predictive model support the proposed risk segmentation?
+
+### Expected outputs
+
+- Predictive model
+- Feature importance
+- No-show probability
+- Confusion matrix
+- Precision
+- Recall
+- F1-score
+- ROC-AUC
+- Validation results
+- Model limitations
+
+---
+
+## Week 8 Focus
+
+Week 8 will focus on final integration and decision support.
+
+Planned activities include:
+
+- Correcting validated KPI issues
+- Integrating Data Science findings
+- Refining the risk-segmentation approach
+- Updating Power BI visualisations
+- Presenting validated insights
+- Translating findings into evidence-based recommendations
+- Documenting limitations
+- Preparing the final project presentation
+
+---
+
+## Limitations
+
+- The data is observational.
+- Associations do not necessarily imply causation.
+- Some subgroups may have small sample sizes.
+- Reminder-channel analysis may be affected by selection effects.
+- Missing waiting-time and distance values were imputed.
+- Risk segmentation requires predictive validation.
+- The dataset may not contain all factors affecting appointment attendance.
+
+---
+
+## Tools
+
+- Microsoft Excel
+- Power Query
+- Power BI
+- DAX
+- GitHub
+
+---
+
+## Project Outcome
+
+Week 7 progressed the HealthConnect project from descriptive and exploratory analysis toward validated analytics and decision support.
+
+The validation confirmed several important patterns involving previous no-show behaviour, booking lead time, distance to clinic, reminder channels and appointment type, while also identifying a KPI labelling error requiring correction.
+
+The validated findings will be used as inputs for Data Science predictive modelling and final Week 8 integration.
