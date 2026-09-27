@@ -1,0 +1,22 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-NG
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["HEALTHCONNENT_PREPARED_DATA"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table HEALTHCONNENT_PREPARED_DATA
+ref table DateTableTemplate_faf60035-06f1-4e6e-a03c-aa47e064843c
+ref table LocalDateTable_1595cb9d-580b-4cf8-ab31-2a95c69d7123
+ref table LocalDateTable_1da9bede-bb55-4e10-9dc0-d3713499d64b
+
+ref cultureInfo en-US
+
